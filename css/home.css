@@ -6,3 +6,22 @@ body {
   background-color: #000000;
   overflow: hidden;
 }
+
+.topnav a {
+  float: left;
+  color: #00ffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #00ffff;
+  color: #000000;
+}
+
+.topnav a:active {
+  background-color: #f0f8ff;
+  color: #ffffff;
+}
