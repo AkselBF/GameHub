@@ -4,9 +4,6 @@
   font-family: "Goldman";
   src: url(../fonts/Goldman-Regular.ttf);
 }
-@font-face {
-  font-family: 'inter', sans-serif;
-}
 
 body {
   background-color: #141414;
