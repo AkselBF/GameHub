@@ -1,10 +1,24 @@
-body {
-  background-color: #141414;
+@font-face {
+  font-family: "Goldman";
+  src: url(../fonts/Goldman-Bold.ttf);
 }
 
+a {
+  font-family: "Goldman";
+}
+
+body {
+  background-color: #141414;
+  margin: 0;
+}
+
+/*Top navigation bar menu*/
 .topnav {
   background-color: #000000;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topnav a {
@@ -24,4 +38,35 @@ body {
 .topnav a:active {
   background-color: #f0f8ff;
   color: #ffffff;
+}
+
+/*automatic image show*/
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(../images/GameHub_ZeldaBotw.jpg);
+    background-size: 100%;
+  }
+  33% {
+    background-image: url(../images/GameHub_Forspoken.jpg);
+    background-size: 100%;
+  }
+  66% {
+    background-image: url(../images/GameHub_EldenRing.jpg);
+    background-size: 100%;
+  }
+  100% {
+    background-image: url(../images/GameHub_ZeldaBotw.jpg);
+    background-size: 100%;
+  }
 }
