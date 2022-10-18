@@ -15,6 +15,9 @@ body {
 
 h2 {
   font-family: "Goldman";
+  font-weight: lighter;
+  text-align: center;
+  color: #5CAFFD;
 }
 
 h3 {
@@ -106,24 +109,52 @@ a {
   /*background-color: #0E253A;*/
   background-image: linear-gradient(#0E253A, #141414);
 }
-h2 {
-  font-family: "Goldman";
-  font-weight: lighter;
-  text-align: center;
-  color: #5CAFFD;
-}
 
 .newsBox {
   background-color: #1E1E1E;
   margin-bottom: 2%;
   margin-right: 1%;
+  display: flex;
 }
 
 .textBox {
   background-color: #141414;
-  width: 30%;
+  width: 35%;
   padding: 1%;
-  margin-bottom: 2%;
+}
+
+/*Newest games*/
+.introRow {
+  margin-left: 36%;
+  padding-top: 10px;
+  padding-left: 1%;
+}
+
+#news {
+  font-family: "Goldman";
+  text-align: left;
+}
+
+.imgRow {
+  padding-top: 6%;
+  padding-left: 3%;
+  overflow: hidden;
+  text-align: center;
+  flex-direction: row;
+  display: flex;
+  margin-left: 1%;
+}
+
+.switchGames {
+  width: 20%;
+  height: 45%;
+  padding-right: 5%;
+}
+
+.psGames {
+  width: 25%;
+  height: 45%;
+  padding-right: 5%;
 }
 
 /*automatic image show*/
