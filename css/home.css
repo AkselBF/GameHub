@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 @font-face {
   font-family: "Goldman";
   src: url(../fonts/Goldman-Regular.ttf);
 }
 
+/*body and fonts*/
 body {
   background-color: #141414;
   margin: 0;
@@ -15,8 +17,35 @@ h2 {
   font-family: "Goldman";
 }
 
+h3 {
+  font-family: 'inter', sans-serif;
+  font-size: larger;
+  color: #5CAFFD;
+}
+
+li + p {
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+li {
+  font-family: 'inter', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  color: #5CAFFD;
+}
+
+p {
+  font-family: 'inter', sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
 a {
   font-family: 'inter', sans-serif;
+  font-weight: 600;
   text-align: left;
   font-style: italic;
 }
@@ -95,32 +124,6 @@ h2 {
   width: 30%;
   padding: 1%;
   margin-bottom: 2%;
-}
-
-h3 {
-  font-family: 'inter', sans-serif;
-  font-size: larger;
-  color: #5CAFFD;
-}
-
-li + p {
-  margin-top: 2%;
-  margin-bottom: 10%;
-}
-
-li {
-  font-family: 'inter', sans-serif;
-  font-size: large;
-  font-weight: normal;
-  color: #5CAFFD;
-}
-
-p {
-  font-family: 'inter', sans-serif;
-  font-size: medium;
-  font-weight: lighter;
-  color: #ffffff;
-  line-height: 1.5;
 }
 
 /*automatic image show*/
