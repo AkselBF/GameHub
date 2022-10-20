@@ -1,3 +1,4 @@
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
@@ -22,7 +23,6 @@ h2 {
 
 h3 {
   font-family: 'inter', sans-serif;
-  font-size: larger;
   color: #5CAFFD;
 }
 
@@ -85,88 +85,16 @@ a {
   max-width: 100%;
 }
 
-/*website description*/
-#desc {
-  text-align: center;
-  color: #3ED3F3;
-}
-
-#overT {
-  background-color: #3ED3F3;
-  width: 12%;
-  height: 3px;
-  border: none;
-}
-#underT {
-  background-color: #3ED3F3;
-  width: 20%;
-  height: 3px;
-  border: none;
-}
-
-/*Middle of page*/
-.middleWrap {
-  /*background-color: #0E253A;*/
-  background-image: linear-gradient(#0E253A, #141414);
-}
-
-.newsBox {
-  background-color: #1E1E1E;
-  margin-bottom: 2%;
-  margin-right: 1%;
-  display: flex;
-}
-
-.textBox {
-  background-color: #141414;
-  width: 35%;
-  padding: 1%;
-}
-
-/*Newest games*/
-.introRow {
-  margin-left: 36%;
-  padding-top: 10px;
-  padding-left: 1%;
-}
-
-#news {
-  font-family: "Goldman";
-  text-align: left;
-}
-
-.imgRow {
-  padding-top: 6%;
-  padding-left: 3%;
-  overflow: hidden;
-  text-align: center;
-  flex-direction: row;
-  display: flex;
-  margin-left: 1%;
-}
-
-.switchGames {
-  width: 20%;
-  height: 45%;
-  padding-right: 5%;
-}
-
-.psGames {
-  width: 25%;
-  height: 45%;
-  padding-right: 5%;
-}
-
 /*automatic image show*/
 .wrapper {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  animation: slide 10s infinite;
+  animation: slide 15s infinite;
 }
 
 img {
   width: 100%;
+  background-repeat: no-repeat;
 }
 
 @keyframes slide {
@@ -187,3 +115,82 @@ img {
     background-size: 100%;
   }
 }
+
+/*website description*/
+#desc {
+  text-align: center;
+  color: #3ED3F3;
+}
+
+#overT {
+  background-color: #3ED3F3;
+  width: 12%;
+  height: 3px;
+  border: none;
+}
+#underT {
+  background-color: #3ED3F3;
+  width: 20%;
+  height: 3px;
+  border: none;
+}
+
+/*Lower side of page*/
+.middleWrap {
+  background-image: linear-gradient(#0E253A, #141414);
+}
+
+.newsBox {
+  background-color: #1E1E1E;
+  margin: 1%;
+  display: flex;
+}
+
+.left {
+  background-color: #141414;
+  width: 35%;
+  padding: 1%;
+}
+
+/*Newest games*/
+.introRow {
+  margin-left: 36%;
+  padding-top: 10px;
+  padding-left: 1%;
+}
+
+#news {
+  font-family: "Goldman";
+  text-align: left;
+  padding-top: 1%;
+}
+
+.right {
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  margin-left: 1%;
+}
+
+.imgRow {
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 2%;
+  padding-left: 1%;
+  padding-bottom: 5%;
+}
+
+.switchGames {
+  height: 90%;
+  width: 30%;
+  padding-left: 10px;
+  border-right: 10px solid #000000;
+}
+
+.psGames {
+  height: 90%;
+  width: 35%;
+  padding-left: 50px;
+  border-right: 10px solid #000000;
+}
+
