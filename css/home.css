@@ -63,7 +63,8 @@ a {
 }
 
 .topnav a {
-  float: left;
+  width: 15%;
+  float: right;
   color: #00ffff;
   text-align: center;
   padding: 14px 16px;
@@ -97,6 +98,12 @@ img {
   background-repeat: no-repeat;
 }
 
+.logo {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+}
+
 @keyframes slide {
   0% {
     background-image: url(../images/GameHub_ZeldaBotw.jpg);
@@ -117,16 +124,15 @@ img {
 }
 
 /*website description*/
-#desc {
-  text-align: center;
-  color: #3ED3F3;
-}
-
 #overT {
   background-color: #3ED3F3;
   width: 12%;
   height: 3px;
   border: none;
+}
+#desc {
+  text-align: center;
+  color: #3ED3F3;
 }
 #underT {
   background-color: #3ED3F3;
@@ -142,19 +148,18 @@ img {
 
 .newsBox {
   background-color: #1E1E1E;
-  margin: 1%;
   display: flex;
 }
 
 .left {
   background-color: #141414;
   width: 35%;
-  padding: 1%;
+  padding: 1% 2% 1% 2%;
 }
 
 /*Newest games*/
 .introRow {
-  margin-left: 36%;
+  margin-left: 5%;
   padding-top: 10px;
   padding-left: 1%;
 }
@@ -162,7 +167,7 @@ img {
 #news {
   font-family: "Goldman";
   text-align: left;
-  padding-top: 1%;
+  padding: 2% 0 0 2%;
 }
 
 .right {
@@ -173,24 +178,73 @@ img {
 }
 
 .imgRow {
-  flex-direction: column;
+  display: flex;
   overflow: hidden;
-  padding-top: 2%;
-  padding-left: 1%;
-  padding-bottom: 5%;
+  padding: 2% 1% 10% 6%;
+}
+
+/*The switch game*/
+.swDesc {
+  position: relative;
 }
 
 .switchGames {
-  height: 90%;
-  width: 30%;
+  height: 400px;
+  width: 250px;
   padding-left: 10px;
   border-right: 10px solid #000000;
 }
 
+.swtxt {
+  position: absolute;
+  padding-left: 20px;
+  line-height: 1px;
+  width: 240px;
+  background-color: #000000;
+  left: 10px;
+  top: 400px;
+}
+
+.swdetails {
+  color: #00ffff;
+}
+
+/*The playstation game*/
+.psDesc {
+  position: relative;
+}
+
 .psGames {
-  height: 90%;
-  width: 35%;
-  padding-left: 50px;
+  height: 400px;
+  width: 300px;
+  padding-left: 20px;
   border-right: 10px solid #000000;
 }
 
+.pstxt {
+  position: absolute;
+  padding-left: 20px;
+  line-height: 1px;
+  width: 290px;
+  background-color: #000000;
+  left: 20px;
+  top: 400px;
+}
+.psdetails {
+  color: #00ffff;
+}
+
+.salesbox {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 590px;
+  background-color: #0E253A;
+}
+
+.salestxt {
+  text-align: center;
+  padding-left: 20px;
+  color: #00ffff;
+}
+
+/*Media querries*/
