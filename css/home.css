@@ -109,6 +109,89 @@ label {
   color: #ffffff;
 }
 
+/*hamburger menu*/
+.menuwrap {
+  background-color: #000000;
+  overflow: hidden;
+  position: fixed;
+  padding: 5px;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  display: none;
+}
+
+.menuwrap ul {
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.menuwrap ul a {
+  display: block;
+  outline: none;
+  border-right: 1px solid #00ffff;  
+}
+
+.menuwrap ul a:hover {
+  background-color: #00ffff;
+  color: #000000;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.menuwrap .menu {
+  clear: both;
+  max-height: 0;
+  transition:max height .2s ease-out;
+}
+
+.menuwrap .menu-icon {
+  padding: 14px 16px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.menuwrap .menu-icon .nav-icon {
+  background: #00ffff;
+  display: block;
+  height: 2px;
+  width: 20px;
+  position: relative;
+  transition:background .2s ease-out;
+}
+
+.menuwrap .menu-icon .nav-icon:before {
+  background: #00ffff;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  transition:all .2s ease-out;
+}
+
+.menuwrap .menu-icon .nav-icon:after {
+  background: #00ffff;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition:all .2s ease-out;
+}
+
+.menuwrap .toggle {
+  display: none;
+}
+
+.menuwrap .toggle:checked ~ .menu {
+  max-height: 250px;
+}
+
 @media (max-width: 1300px) {
   .topnav a {
     width: 150px;
@@ -120,12 +203,33 @@ label {
     width: 120px;
   }
 }
-/*
-@media (max-width: 960px) {
-  .topnav a {
 
+@media (max-width: 960px) {
+  .topnav {
+    visibility: hidden;
+    display: none;
   }
-}*/
+  .topnav a {
+    visibility: hidden;
+    display: none;
+  }
+
+  .menuwrap  {
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+    padding: 5px;
+    top: 0;
+    width: 100%;
+    display: block;
+    visibility: visible;
+  }
+  .menuwrap ul {
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+  }
+}
 
 .container {
   max-width: 100%;
