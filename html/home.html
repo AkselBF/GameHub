@@ -12,56 +12,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <!--<label id="bMenu" for="toggle">&5676</label>
-    <input type="checkbox" class="toggle"/>-->
-    <header>
-      <div class="topnav">
-        <a><img src="../images/GameHub_cartLogo.png" class="shop" href="#cart"> Cart</a>
-        <a href="#contact">Contact us</a>
-        <a href="#about">About us</a>
-        <a href="#games">Games</a>
-        <a class="active" href="#home">Home</a>
-        <img src="../images/GameHub_Logo.png" class="logo">
-      </div>
+  <header class="navbar">
+    <img src="../images/GameHub_Logo.png" class="logo">
+    <input class="burgermenu" type="checkbox" id="burgermenu"/>
+    <label class="icon" for="burgermenu"><span class="burgerline"></span></label>
+    <!--Menu-->
+    <nav class="navi">
+      <ul class="menu">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact us</a></li>
+        <li><a><img src="../images/GameHub_cartLogo.png" class="shop" href="#cart"> Cart</a></li>
+      </ul>
+    </nav>
 
-      <div class="menuwrap">
-        <input type="checkbox" class="toggle"/>
-        <label class="menu-icon" for="toggle"><span class="nav-icon"></span></label>
-        <div class="burgermenu"></div>
-        <div class="menu">
-          <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#contact">Contact us</a></li>
-            <li><a><img src="../images/GameHub_cartLogo.png" class="shop" href="#cart"> Cart</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+  </header>
 
-    <!--
-    <div class="logo">
-      <img src="../images/GameHub_Logo.png">
+  <main>
+    <div class="wrapper">
+      <div class="imageslider">
+        <img src="../images/GameHub_ZeldaBotw.jpg"/>
+        <img src="../images/GameHub_Forspoken.jpg"/>
+        <img src="../images/GameHub_EldenRing.jpg"/>
+      </div>
+      <!--<img src="images/GameHub_ZeldaBotw.jpg" class="imageslide1"/>
+      <img src="images/GameHub_Forspoken.jpg" class="imageslide2">
+      <img src="images/GameHub_EldenRing.jpg" class="imageslide3"/>-->
     </div>
-  -->
-
-    <div class="wrapper"></div>
 
     <div class="txtwrapper">
-      <hr id="overT">
+      <center><hr id="overT"></center>
       <h2 id="desc">Any game from any <br>platform, found here!</h2>
-      <hr id="underT">
+      <center><hr id="underT"></center>
     </div>
 
     <div class="middleWrap">
-      <h2>Latest news</h2>
+      <h2 class="late">Latest news</h2>
       <br>
 
       <div class="newsBox">
         <div class="left">
-          <h3>The news include</h3>
+          <h2 class="introRow">The news include:</h2>
           <ul>
             <li>Newly announced games:</li>
             <p>The latest games, either known or lesser known are on display here and of any kind. If, there's a game out there, you kan find it in here.</p>
@@ -101,8 +93,6 @@
         </div>
       </div>
     </div>
-
-  </div>
-  
+  </main>
 </body>
 </html>
