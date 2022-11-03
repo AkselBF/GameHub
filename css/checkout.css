@@ -250,6 +250,17 @@ a {
 }
 
 /*mid section*/
-.txtbox {
+label,
+input {
   display: block;
+}
+
+input {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.txtbox {
+  margin: 20px 10px 20px 40px;
 }
