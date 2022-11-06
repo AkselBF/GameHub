@@ -34,10 +34,68 @@
       <h2 class="checkt">Checkout</h2>
     </div>
     <div class="container">
-      <div class="txtbox">
-        <label for="Name">Name</label>
-        <input type="text" id="namebox" name="Name" placeholder="">
+      <div class="left">
+        <div class="txtbox" id="name">
+          <label for="Name" class="boxname">Name</label>
+          <input type="text" class="box" id="namebox" name="Name" placeholder="">
+        </div>
+        <div class="txtbox" id="last">
+          <label for="Last-name" class="boxname">Last name</label>
+          <input type="text" class="box" id="lastbox" name="Last-name" placeholder="">
+        </div>
+        <div class="txtbox" id="mail">
+          <label for="E-mail" class="boxname">E-mail</label>
+          <input type="text" class="box" id="mailbox" name="E-mail" placeholder="">
+        </div>
+        <div class="txtbox" id="adress">
+          <label for="Adress" class="boxname">Adress</label>
+          <input type="text" class="box" id="adrbox" name="Adress" placeholder="">
+        </div>
+        <div class="txtbox" id="post">
+          <label for="Postal" class="boxname">Postal nr</label>
+          <input type="text" class="box" id="postbox" name="Postal" placeholder="">
+        </div>
+        <div class="txtbox" id="country">
+          <label for="Country" class="boxname">Country</label>
+          <input type="text" class="box" id="countrybox" name="Country" placeholder="">
+        </div>
+        <div class="txtbox" id="city">
+          <label for="City" class="boxname">City</label>
+          <input type="text" class="box" id="citybox" name="City" placeholder="">
+        </div>
+        <div class="txtbox" id="card">
+          <label for="Card" class="boxname">Card nr</label>
+          <input type="tel" class="box" id="cardbox" name="Card" 
+          min="0" max="9" maxlength="19" inputmode="numeric"
+          pattern="[0-3\s]" placeholder="____ ____ ____ ____">
+        </div>
+        <div class="txtbox" id="date">
+          <label for="Time" class="boxname">Month/Year</label>
+          <input type="tel" class="box" id="timebox" name="Time" 
+          min="0" max="9" maxlength="5" inputmode="numeric"
+          placeholder="__/__">
+        </div>
+        <div class="txtbox" id="sec">
+          <label for="Security" class="boxname">CVC</label>
+          <input type="tel" class="box" id="secbox" name="Security" 
+          min="0" max="9" maxlength="4" inputmode="numeric"
+          placeholder="___">
+        </div>
       </div>
+      <diz class="right">
+        <h2 class="product">Product:</h2>
+        <div class="prod-name">
+          <h3>Name: </h3><p> The legend of Zelda: Botw</p>
+        </div>
+        <div class="prod-name">
+          <h3>Platform: </h3><p> Nintendo Switch</p>
+        </div>
+        <div class="prod-name">
+          <h3>Delivery: </h3><p> To home</p>
+        </div>
+        <h2 class="total">Total: 599kr</h2>
+        <img class="game" src="../images/GameHub_ZeldaBotwGame_2.jpg">
+      </diz>
     </div>
   </main>
   
