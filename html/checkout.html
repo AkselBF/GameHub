@@ -14,7 +14,7 @@
 
 <body>
   <header class="navbar">
-    <img src="../images/GameHub_Logo.png" class="logo">
+    <a href="../html/home.html"><img src="../images/GameHub_Logo.png" class="logo"></a>
     <input class="burgermenu" type="checkbox" id="burgermenu"/>
     <label class="icon" for="burgermenu"><span class="burgerline"></span></label>
     <!--Menu-->
@@ -32,6 +32,8 @@
   <main>
     <div class="top">
       <h2 class="checkt">Checkout</h2>
+      <span class="l-dot"></span>
+      <span class="r-dot"></span>
     </div>
     <div class="container">
       <div class="left">
@@ -66,7 +68,7 @@
         <div class="txtbox" id="card">
           <label for="Card" class="boxname">Card nr</label>
           <input type="tel" class="box" id="cardbox" name="Card" 
-          min="0" max="9" maxlength="19" inputmode="numeric"
+          min="0" max="9" maxlength="16" inputmode="numeric"
           pattern="[0-3\s]" placeholder="____ ____ ____ ____">
         </div>
         <div class="txtbox" id="date">
@@ -78,7 +80,7 @@
         <div class="txtbox" id="sec">
           <label for="Security" class="boxname">CVC</label>
           <input type="tel" class="box" id="secbox" name="Security" 
-          min="0" max="9" maxlength="4" inputmode="numeric"
+          min="0" max="9" maxlength="3" inputmode="numeric"
           placeholder="___">
         </div>
       </div>

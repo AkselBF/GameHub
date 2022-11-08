@@ -243,9 +243,26 @@ a {
 /*Top section*/
 .top {
   text-align: center;
-  padding: 10px 0 60px 0;
+  padding: 10px 0 10px 0;
   background-color: #D9D9D9;
   margin-bottom: 20px;
+}
+
+.l-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #0E253A;
+  border-radius: 50%;
+  margin: 20px 20px 0 0;
+  display: inline-block;
+}
+.r-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #7B7C7D;
+  border-radius: 50%;
+  margin: 20px 0 0 20px;
+  display: inline-block;
 }
 
 .checkt {
@@ -410,18 +427,90 @@ input {
 }
 
 /*media querries for entire page*/
+@media (max-width: 1286px) {
+  .right-button {
+    margin: 20px 20px 10px 40px;
+    float: left;
+  }
+}
+
 @media (max-width: 1207px) {
   .container {
     flex-direction: column;
     display: flex;
   }
-
   .left {
     width: 100%;
     margin-bottom: 20px;
   }
-
   .right {
     width: 100%;
+  }
+  .right-button {
+    float: right;
+    margin: 210px 20px 10px 10px;
+  }
+
+  #mail, #adress {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 675px) {
+  .txtbox {
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px 10px 20px 20px;
+  }
+  .box {
+    font-size: small;
+  }
+  .game {
+    margin: -20px 10px 20px 20px;
+  }
+  #mailbox, #cardbox, #lastbox, #adrbox {
+    width: 300px;
+  }
+  #cardbox, #timebox, #secbox {
+    font-size: medium;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 595px) {
+  .game {
+    float: left;
+    margin: 10px 10px 20px 40px;
+  }
+  .right-button {
+    float: left;
+    margin: 20px 10px 20px 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .txtbox {
+    margin: 20px 10px 20px 20px;
+  }
+  .right-button {
+    float: left;
+    width: 260px;
+  }
+  .game {
+    margin: 10px 10px 20px 50px;
+  }
+  #mailbox, #cardbox, #namebox, #lastbox, #adrbox {
+    width: 250px;
+  }
+  #cardbox, #timebox, #secbox {
+    font-size: small;
+    letter-spacing: 5px;
+  }
+  #postbox, #timebox {
+    width: 120px;
+  }
+  #secbox {
+    width: 95px;
   }
 }

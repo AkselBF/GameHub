@@ -238,3 +238,7 @@ a {
     display: none;
   }
 }
+
+.top-image {
+  width: 100vw;
+}
