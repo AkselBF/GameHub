@@ -490,8 +490,8 @@ a {
 }
 
 .screenshot:hover {
-  width: 420px;
-  height: 260px;
+  scale: 1.03;
+  overflow-y: hidden;
   transition: 0.5s;
 }
 
