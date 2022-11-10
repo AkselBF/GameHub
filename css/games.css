@@ -69,7 +69,6 @@ a {
   position: sticky;
   top: 0;
   width: 100%;
-  /*width: 100vw;*//*This fixes the right extra space problem*/
   padding: 10px 10px 10px 10px;
   z-index: 100;
 }
@@ -401,7 +400,8 @@ a {
     width: 90vw;
   }
   .playline {
-    width: 90vw;
+    width: 80vw;
+    margin: 0 auto 0 auto;
   }
 }
 
@@ -461,18 +461,22 @@ a {
   }
 
   .playgames {
-    margin-left: 4%;
+    margin-left: 0;
+    width: 100%;
+  }
+  .playgame {
+    height: 300px;
+    width: 190px;
+    margin: 0 20px 0 0;
+  }
+  .playline {
+    width: 70vw;
   }
 }
 
 @media (max-width: 360px) {
   .playline {
-    width: 90vw;
-  }
-
-  .playgames {
-    margin-left: 5%;
-    width: 90vw;
+    width: 100vw;
   }
 }
 /*end of playbox media querries*/
@@ -683,7 +687,7 @@ a {
     width: 90vw;
   }
   .psline {
-    width: 90vw;
+    width: 80vw;
   }
   .ps-price {
     margin-right: 10px;
@@ -718,24 +722,26 @@ a {
     width: 85vw;
     margin-left: 7.5%;
   }
-  .psline {
-    width: 85vw;
-  }
 }
 
 @media (max-width: 600px) {
   .psgames {
-    margin-left: 7.5%;
+    margin-left: 0;
+    width: 100%;
+  }
+  .psgame {
+    height: 300px;
+    width: 230px;
+    margin: 0 20px 0 0;
+  }
+  .psline {
+    width: 70vw;
   }
 }
 
 @media (max-width: 360px) {
-  .psgames {
-    width: 90vw;
-    margin-left: 5%;
-  }
   .psline {
-    width: 90vw;
+    width: 100vw;
   }
 }
 /*end of ps media querries*/
@@ -895,7 +901,7 @@ a {
     width: 90vw;
   }
   .swline {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
@@ -955,35 +961,39 @@ a {
   }
 
   .swgames {
-    margin-left: 4%;
+    margin-left: 0;
+    width: 100%;
+  }
+  .swgame {
+    height: 300px;
+    width: 190px;
+    margin: 0 20px 0 0;
+  }
+  .swline {
+    width: 70vw;
   }
 }
 
 @media (max-width: 360px) {
   .swline {
-    width: 90vw;
-  }
-
-  .swgames {
-    margin-left: 5%;
-    width: 90vw;
+    width: 100vw;
   }
 }
 /*end of switch media querries*/
-
+/**/
 /*media querries for side arrows*/
 @media (max-width: 1286px) {
   .right-arrow {
-    right: 10.5%;
+    right: 11%;
   }
   .left-arrow {
-    left: 10.5%;
+    left: 11%;
   }
 }
 
 @media (max-width: 1080px) {
   .right-arrow {
-    right: 15%;
+    right: 16%;
   }
   .left-arrow {
     left: 15.5%;
@@ -992,7 +1002,7 @@ a {
 
 @media (max-width: 850px) {
   .right-arrow {
-    right: 17%;
+    right: 18%;
   }
   .left-arrow {
     left: 18%;
@@ -1004,61 +1014,39 @@ a {
     right: 21%;
   }
   .right-arrow#sw-r-arrow {
-    right: 19.5%;
+    right: 21%;
   }
   .left-arrow {
-    left: 23%;
+    left: 21%;
   }
   .left-arrow#sw-l-arrow {
-    left: 19.5%;
+    left: 21%;
   }
 }
 
 @media (max-width: 600px) {
   .right-arrow {
-    right: 25%;
+    right: 31%;
   }
   .right-arrow#sw-r-arrow {
-    right: 25%;
+    right: 31%;
   }
 
   .left-arrow {
-    left: 27.5%;
+    left: 30%;
   }
   .left-arrow#sw-l-arrow {
-    left: 25.5%;
+    left: 30%;
   }
 }
 
 @media (max-width: 360px) {
-  .right-arrow#ps-r-arrow {
-    right: 30%;
-    background-color: #000000;
-    border: 6px solid #00000000;
+  .right-arrow {
+    visibility: hidden;
+    display: none;
   }
-  .right-arrow#sw-r-arrow {
-    right: 30%;
-    background-color: #000000;
-    border: 6px solid #00000000;
-  }
-  .right-arrow#sw-r-arrow::after {
-    border-top: 6px solid #ffffff;
-    border-right: 6px solid #ffffff;
-  }
-
-  .left-arrow#ps-l-arrow {
-    left: 34.5%;
-    background-color: #000000;
-    border: 6px solid #00000000;
-  }
-  .left-arrow#sw-l-arrow {
-    left: 34.5%;
-    background-color: #000000;
-    border: 6px solid #00000000;
-  }
-  .left-arrow#sw-l-arrow::after {
-    border-top: 6px solid #ffffff;
-    border-right: 6px solid #ffffff;
+  .left-arrow {
+    visibility: hidden;
+    display: none;
   }
 }
-/*end of arrow media querries*/
