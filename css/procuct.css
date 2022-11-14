@@ -69,7 +69,6 @@ a {
   position: sticky;
   top: 0;
   width: 100%;
-  /*width: 100vw;*//*This fixes the right extra space problem*/
   padding: 10px 10px 10px 10px;
   z-index: 100;
 }
@@ -401,6 +400,7 @@ a {
   width: 70%;
   margin: 0 10px 0 20px;
 }
+
 /*Line between each text*/
 .text-line {
   width: 85vw;

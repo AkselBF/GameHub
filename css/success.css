@@ -51,7 +51,6 @@ p {
   line-height: 1.5;
 }
 
-
 ul {
   list-style: none;
 }
@@ -69,7 +68,6 @@ a {
   position: sticky;
   top: 0;
   width: 100%;
-  /*width: 100vw;*//*This fixes the right extra space problem*/
   padding: 10px 10px 10px 10px;
   z-index: 100;
 }
